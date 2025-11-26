@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Game Boy Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gameboy">
+        <div class="gameboy-body">
+            <div class="screen-container">
+                <div class="screen-border">
+                    <canvas id="gameCanvas" width="320" height="288"></canvas>
+                    <div class="score-display">Score: <span id="score">0</span></div>
+                </div>
+            </div>
+            
+            <div class="gameboy-brand">
+                <div class="brand-text">GAME BOY</div>
+            </div>
+            
+            <div class="controls">
+                <div class="dpad">
+                    <button class="dpad-btn up" data-direction="up" id="btn-up">▲</button>
+                    <button class="dpad-btn down" data-direction="down" id="btn-down">▼</button>
+                    <button class="dpad-btn left" data-direction="left" id="btn-left">◄</button>
+                    <button class="dpad-btn right" data-direction="right" id="btn-right">►</button>
+                    <div class="dpad-center"></div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn btn-b" id="btn-b">B</button>
+                    <button class="action-btn btn-a" id="btn-a">A</button>
+                </div>
+            </div>
+            
+            <div class="start-select">
+                <button class="small-btn" id="btn-select">SELECT</button>
+                <button class="small-btn" id="btn-start">START</button>
+            </div>
+            
+            <div class="speaker">
+                <div class="speaker-hole"></div>
+                <div class="speaker-hole"></div>
+                <div class="speaker-hole"></div>
+                <div class="speaker-hole"></div>
+                <div class="speaker-hole"></div>
+                <div class="speaker-hole"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <h3>How to Play</h3>
+        <p>Use arrow keys or click the D-pad to control the snake</p>
+        <p>Press START or SPACE to begin/restart the game</p>
+        <p>Eat the red food to grow and score points!</p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
